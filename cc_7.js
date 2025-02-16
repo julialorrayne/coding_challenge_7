@@ -8,7 +8,7 @@ function calculateInvoice(subtotal, taxRate, discount) {
 function calculateHourlyWage(salary, hoursPerWeek) {
     let hourlyWage = salary / (hoursPerWeek * 52)
     return console.log(`Hourly Wage: $${hourlyWage.toFixed(2)}`) // logging result to the console
-}
+}; // created function that calculates the hourly wage based on the salary and hours per week
 
 //Task 3: Arrow Function
 const calculateLoyaltyDiscount = (amount,years) => {
