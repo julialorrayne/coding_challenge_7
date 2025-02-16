@@ -78,3 +78,18 @@ function filterHighValueTransactions(transactions, filterFunction) {
 // that filters transactions above $1000.
 
 filterHighValueTransactions(transactions, amount => amount > 1000); // testing the function 
+
+//Task 7: Closures
+function createBudgetTracker() {
+    let balance = 0;
+
+    return (amount) => {
+        balance -= amount
+        return console.log(`Current Balance: $${balance}`)
+    }
+}; //created a closure that tracks the balance
+
+let budget = createBudgetTracker(); //called function createBudgetTracker and assigned it to budget
+budget(300); // Expected output: "Current Balance: -$300"
+budget(200); // Expected output: "Current Balance: -$500"
+// tested outputs
