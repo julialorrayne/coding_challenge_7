@@ -62,12 +62,6 @@ function calculateLoanInterest(principal, rate,years) {
 //Interest = Principal * Rate * Years
 
 //Task 6: Higher-Order Functions
-//let transactions = [500, 1200, 3000, 800, 2200];
-//function filterHighValueTransactions(transactions, filterFunction) {
-//    let highValueTransactions = transactions.filter(filterFunction)
-//    return console.log(highValueTransactions)
-//};
-
 let transactions = [500, 1200, 3000, 800, 2200]; ////created an array transactions with  five amounts.
 
 function filterHighValueTransactions(transactions, filterFunction) {
