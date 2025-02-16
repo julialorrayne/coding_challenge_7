@@ -28,3 +28,27 @@ const calculateLoyaltyDiscount = (amount,years) => {
 //years >= 5: 15% discount
 //years >= 3: 10% discount
 //years < 3: 5% discount
+
+//Task 4: Parameters and Arguments
+function calculateShippingCost(weight,location, expedited = false) {
+    let shippingCost = 0
+    if (location === 'USA' && expedited) {
+        shippingCost = 5 + (0.5 * weight) + 10
+    }
+    else if (location === 'USA' && !expedited){
+        shippingCost = 5 + (0.5 * weight)
+    }
+    else if (location === 'Canada' && expedited){
+        shippingCost = 10 + (0.7 * weight)
+    }
+    else if (location === 'Canada' && !expedited){
+        shippingCost = 10 + (0.7 * weight)
+    }
+
+    return console.log(`Shipping Cost: $${shippingCost.toFixed(2)}`)
+};
+//wrote a function calculateShippingCost(weight, location, expedited = false) to calculate shipping fees
+// based on the following conditions:
+//USA: $5 + $0.5 per lb
+//Canada: $10 + $0.7 per lb
+//Expedited shipping: additional $10 fee
