@@ -52,3 +52,11 @@ function calculateShippingCost(weight,location, expedited = false) {
 //USA: $5 + $0.5 per lb
 //Canada: $10 + $0.7 per lb
 //Expedited shipping: additional $10 fee
+
+//Task 5: Returning Values
+function calculateLoanInterest(principal, rate,years) {
+    let interest = principal * rate * years
+    return console.log (`Total interest: $${interest.toFixed(2)}`)
+};
+//created function calculateLoanInterest that returns total interest using the formula:
+//Interest = Principal * Rate * Years
